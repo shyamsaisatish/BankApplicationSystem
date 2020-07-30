@@ -55,6 +55,7 @@ statement1.executeUpdate(sql);
 statement3=connection.createStatement();
 String sql2 ="update shyam.user set accbalance=(accbalance-1000)";
 statement3.executeUpdate(sql2);
+out.println("Money Debited 1000 rs/-");
 }
 statement2=connection.createStatement();
 String sql1 ="select * from shyam.transactions ORDER BY tid DESC LIMIT 5";
