@@ -50,6 +50,7 @@ double datat=resultSet4.getDouble(1);
 if(datat > 1000)
 {
 statement1=connection.createStatement();
+//query to insert a row into transactions table
 String sql ="insert into shyam.transactions(accnumber,debitamnt) values(123456,1000)";
 statement1.executeUpdate(sql);
 statement3=connection.createStatement();
